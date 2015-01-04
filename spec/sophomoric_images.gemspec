@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.files       = ["../lib/sophomoric_images.rb"]
   s.homepage    = 'http://rubygems.org/gems/sophomoric_images'
   s.license     = 'MIT'
+
+  s.add_development_dependency "rspec"
 end
