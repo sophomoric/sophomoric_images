@@ -40,4 +40,12 @@ describe Croppable do
       expect(instance.cropping?).to eq(true)
     end
   end
+
+  describe "#reprocess_avatar" do
+    it "calls the paperclip method reprocess on the avatar" do
+      avatar = spy("avatar")
+      instance.reprocess(avatar)
+      expect(avatar).to have_received("reprocess!")
+    end
+  end
 end

@@ -6,4 +6,8 @@ module Croppable
   def cropping?
     !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
   end
+
+  def reprocess(avatar)
+    avatar.reprocess!
+  end
 end
