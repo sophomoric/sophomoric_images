@@ -27,5 +27,17 @@ describe Croppable do
     end
   end
 
-  describe "#cropping"
+  describe "#cropping?" do
+    it "returns false if no attribute ivar is set" do
+      expect(instance.cropping?).to eq(false)
+    end
+
+    it "returns true if all ivars set" do
+      instance.crop_x = 10
+      instance.crop_y = 10
+      instance.crop_w = 100
+      instance.crop_h = 100
+      expect(instance.cropping?).to eq(true)
+    end
+  end
 end
