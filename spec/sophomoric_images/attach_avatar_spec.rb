@@ -1,6 +1,3 @@
-require 'spec_helper'
-require_relative '../lib/attach_avatar'
-
 describe AttachAvatar do
   let(:instance) do
     class Testing < ActiveRecord::Base

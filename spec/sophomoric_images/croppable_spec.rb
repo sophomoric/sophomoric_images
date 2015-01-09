@@ -1,6 +1,3 @@
-require 'spec_helper'
-require_relative '../lib/croppable'
-
 describe Croppable do
   let(:instance) do
     class Testing
