@@ -9,9 +9,15 @@ Gem::Specification.new do |s|
   s.description = "Include Imageable and Croppable Modules in a rails model"
   s.authors     = ["Sophomoric"]
   s.email       = "gorkleaderoftribe@gmail.com"
-  s.files       = ["../lib/sophomoric_images.rb"]
+  s.files       = ["lib"]
   s.homepage    = 'http://rubygems.org/gems/sophomoric_images'
   s.license     = 'MIT'
+
+  s.add_dependency "paperclip"
+
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "rake"
 
   s.add_development_dependency "rspec"
 end
